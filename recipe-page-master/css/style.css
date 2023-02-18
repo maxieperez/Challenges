@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  /*     padding: 0 300px; */
+  font-size: 14px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 200px;
+}
+header .header-description {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 1600px;
+}
+main .img-container {
+  min-width: 400px;
+  max-width: 500px;
+  margin: auto;
+}
+main .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+main .container-left {
+  max-width: 500px;
+}
+main .timer {
+  min-width: 150px;
+  height: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  /*         gap: 30px; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+main .timer-items {
+  display: flex;
+  gap: 10px;
+}
+main .timer-items .special_color {
+  color: #F2994A;
+}
+main .timer-items .info #orange {
+  color: #F2994A;
+}
+main .timer-items .info h6 {
+  text-transform: uppercase;
+  color: #BDBDBD;
+}
+main .ingredients .ingredients-tittle {
+  margin: 30px 0;
+}
+main .ingredients .ingredients-subtittle {
+  margin: 30px 0;
+}
+main .ingredients .lyst-item {
+  display: flex;
+  gap: 10px;
+}
+main .ingredients .lyst-item .checkbox-container #btn {
+  border-radius: 50px;
+}
+main .instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .instructions .ingredients-tittle {
+  margin: 30px 0;
+}
+main .instructions .lyst-item {
+  display: flex;
+  gap: 15px;
+}
+main .instructions .lyst-item .square {
+  background: #F2994A;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header p {
+    font-size: 13px;
+    margin: 10px;
+    width: 300px;
+    padding: 0 20px;
+  }
+  main .container {
+    flex-direction: column;
+    position: relative;
+  }
+  main .container-left {
+    margin-top: 100px;
+  }
+  main .timer {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: none;
+    width: 100%;
+    height: 70px;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  main .timer-items {
+    font-size: 12px;
+    gap: 5px;
+  }
+  main .timer .bx {
+    display: flex;
+    gap: 5px;
+  }
+  main .img-container {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 160px;
+  }
+  main .img-container img {
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding: 0 80px;
+  }
+  .timer {
+    justify-content: center;
+    gap: 30px;
+  }
+  .timer .bx {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 0 230px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 0 350px;
+  }
+}
+/* @media (min-width: 1440px){
+    body{
+        padding: 0 900px;
+    }
+    main{
+        .img-container{
+            min-width: 500px;
+            max-width: 700px;
+            min-height: 200px;
+        }
+    }
+} *//*# sourceMappingURL=style.css.map */
