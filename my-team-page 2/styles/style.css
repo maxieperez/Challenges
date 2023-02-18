@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background: #ccc;
+}
+.header-content {
+  display: flex;
+  /*         padding: 30px 250px; */
+  align-items: center;
+}
+.header-content h1 {
+  font-family: "Gloock";
+  width: 250px;
+  margin-left: 30px;
+}
+.header-content h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header-content p {
+  max-width: 300px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main {
+  background: #464646;
+}
+.main-content {
+  width: 100%;
+}
+.main-content .bx {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  /*             padding: 30px 250px; */
+}
+.main-content .bx .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.main-content .bx .section .displace {
+  position: absolute;
+  bottom: 0;
+}
+.main-content .bx .section .card {
+  position: absolute;
+  height: 280px;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-content .bx .section .card:hover {
+  transform: scale(1.1);
+}
+.main-content .bx .section .card .bxr {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.main-content .bx .section .card .bxr .person-name {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 20px;
+}
+.main-content .bx .section .card .bxr .person-img {
+  width: 160px;
+  height: 235px;
+  margin-bottom: 10px;
+}
+.main-content .bx .section .card .bxr .person-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.main-content .bx .section .card .bxr .rol {
+  transform: rotate(90deg);
+  position: absolute;
+  right: -20%;
+  top: 20%;
+  width: 125px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .main-content .bx {
+    flex-wrap: wrap;
+    height: 930px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-content {
+    align-items: center;
+    justify-content: start;
+    padding: 30px 230px;
+    gap: 100px;
+  }
+  .main-content .bx {
+    padding: 0 200px;
+  }
+}
+@media (min-width: 576px) {
+  .header-content {
+    align-items: center;
+    justify-content: start;
+    gap: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
