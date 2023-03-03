@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edie-Homepage</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="./scripts/displayMenu.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__logo"><a href="#">Edie</a></div>
+                <div class="nav__toggle" id="navToggle"></div>
+                <ul class="nav__menu" id="navMenu">
+                    <li class="nav__item nav__item--active"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Out Works</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Clients</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- SECTION HOME -->
+            <section class="section home">
+                <div class="home__info">
+                    <h3 class="home__topText">Unhappy with your website?</h3>
+                    <h1 class="home__title">We create beautiful and fast web services</h1>
+                </div>
+                <figure class="home__bg">
+                    <img src="./assets/images/heroImage.jpg" alt="">
+                </figure>
+                <div class="home__info description">
+                    <h1 class="home__title">Story, emotion and purpose</h1>
+                    <p class="home__paragraph">We help transform your ideas into real world applications that will
+                        outperform your toughest competition and help you achieve your strategic goals in short period
+                        of time.</p>
+                </div>
+            </section>
+            <!-- SECTION contact -->
+            <section class="section contact">
+                <p class="contact__text">Want us to contact you?</p>
+                <form class="contact__form" action="">
+                    <input id="form__email" placeholder="Email" type="email" name="" id="">
+                    <input id="form__button" type="submit" value="Join">
+                </form>
+            </section>
+            <!-- SECTION services -->
+            <section class="section services">
+                <h1 class="home__title">
+                    <p>We offer high demand services </p>
+                </h1>
+                <div class="services__articles">
+                    <article class="article article__desing">
+                        <div class="article__icon">
+                            <img src="./assets/icons/desing-icon.png" alt="">
+                        </div>
+                        <div class="article__title">
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <div class="article__paragraph">pLorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis a
+                            metus ac nulla consequat aliquet id quis turpis.</div>
+                        <a href="#" class="article__button">Get started</a>
+                    </article>
+                    <article class="article article__frontEnd">
+                        <div class="article__icon">
+                            <img src="./assets/icons/front_end-icon.png" alt="">
+                        </div>
+                        <div class="article__title">
+                            <h3>Front End</h3>
+                        </div>
+                        <div class="article__paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat
+                                aliquet id quis turpis.</p>
+                        </div>
+                        <a href="#" class="article__button">Get started</a>
+                    </article>
+                    <article class="article article__backEnd">
+                        <div class="article__icon">
+                            <img src="./assets/icons/back_end-icon.png" alt="">
+                        </div>
+                        <div class="article__title">
+                            <h3>Back End</h3>
+                        </div>
+                        <div class="article__paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat
+                                aliquet id quis turpis.</p>
+                        </div>
+                        <a href="#" class="article__button">Get started</a>
+                    </article>
+                </div>
+            </section>
+            <!-- SECTION desings -->
+            <section class="section desings">
+                <div class="desings__info">
+                    <h1 class="home__title">
+                        <p>We offer high demand services </p>
+                    </h1>
+                </div>
+                <div class="desings__apps">
+                    <section class="app">
+                        <figure class="app__img">
+                            <img src="./assets/images/smarthome.jpg" alt="">
+                        </figure>
+                        <div class="app__text">
+                            <p>Full stack application</p>
+                        </div>
+                        <div class="app__title"><a href="#">Smart home dashboard</a></div>
+                    </section>
+                    <section class="app">
+                        <figure class="app__img">
+                            <img src="./assets/images/onboard.png" alt="">
+                        </figure>
+                        <div class="app__text">
+                            <p>FUX/UI design</p>
+                        </div>
+                        <div class="app__title"><a href="#">Onboard application</a></div>
+                    </section>
+                    <section class="app">
+                        <figure class="app__img">
+                            <img src="./assets/images/booking.png" alt="">
+                        </figure>
+                        <div class="app__text">
+                            <p>Mobile application</p>
+                        </div>
+                        <div class="app__title"><a href="#">Booking system</a></div>
+                    </section>
+                    <section class="app">
+                        <figure class="app__img">
+                            <img src="./assets/images/juice-product.png" alt="">
+                        </figure>
+                        <div class="app__text">
+                            <p>Front End applicati on</p>
+                        </div>
+                        <div class="app__title"><a href="#">Juice product homepage</a></div>
+                    </section>
+                </div>
+                <button class="seeMore" type="">See More</button>
+            </section>
+            <!-- SECTION team -->
+            <section class="section team">
+                <div class="team__info">
+                    <h3 class="team__topText">Meet the team</h3>
+                    <h1 class="home__title">We are chilled and a laidback team</h1>
+                    <p class="team__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="team__images__container">
+                    <figure class="img img1"><img src="./assets/images/person3.png" alt=""></figure>
+                    <figure class="img img2"><img src="./assets/images/person1.png" alt=""></figure>
+                    <figure class="img img3"><img src="./assets/images/person2.png" alt=""></figure>
+                </div>
+                <div class="team__info grid">
+                    <h1 class="home__title">“Fast and outstanding resutls. Edie understands their customer’s needs. They
+                        have a young and talented team.” </h1>
+                </div>
+                <div class="card-container">
+                    <div class="user-card">
+                        <div class="user-card-head-photo">
+                            <img src="./assets/images/person4.png" alt="">
+                        </div>
+                        <div class="user-card-description">
+                            <h2 class="user-name">Carlos Tran</h2>
+                            <p class="user-info">The Decorate Gatsby</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+</body>
+
+</html>
