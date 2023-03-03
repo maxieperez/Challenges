@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    &-content{
+        width: 300px;
+        height: 270px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        border-bottom: 1px solid #ccc;
+        .img-container{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .profilePhoto{
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+        .description-container{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                color: #9b9b9b;
+            }
+        }
+        .infoNm-container{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            .item{
+                width: 70px;
+                background: #ccc;
+                border-radius: 10px;
+                padding: 5px 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                cursor: pointer;
+                .numberCounter{
+                    color: black;
+                }
+                p{
+                    font-size: 14px;
+                    color: #9b9b9b;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+
+    .gallery-container{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 90px 90px 90px;
+        grid-template-rows: 90px 90px 90px;
+        place-content: center;
+        gap: 10px;
+    
+        .item{
+            img{
+                border-radius: 5px;
+                border-radius: 5px;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+                transition: 0.2s;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .photo-1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+        .photo-2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            img{
+                width: 100%;
+                height: 100%;
+        
+            }
+        }
+        .photo-3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            img{
+                width: 100%;
+                height: 100%;
+        
+            }
+        }
+        .photo-4{
+            grid-row: 2/4;
+            grid-column: 3 / span 1;
+            img{
+                width: 100%;
+                height: 100%;
+        
+            }
+        }
+        .photo-5{
+        
+            img{
+                width: 100%;
+                height: 100%;
+        
+            }
+        }
+        .photo-6{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            img{
+                width: 100%;
+                height: 100%;
+        
+            }
+        }
+    }
+    
+}

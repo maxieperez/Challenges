@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+}
+.header-content {
+  width: 300px;
+  height: 270px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  border-bottom: 1px solid #ccc;
+}
+.header-content .img-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-content .img-container .profilePhoto {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.header-content .img-container .profilePhoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.header-content .description-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-content .description-container p {
+  color: #9b9b9b;
+}
+.header-content .infoNm-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.header-content .infoNm-container .item {
+  width: 70px;
+  background: #ccc;
+  border-radius: 10px;
+  padding: 5px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.header-content .infoNm-container .item .numberCounter {
+  color: black;
+}
+.header-content .infoNm-container .item p {
+  font-size: 14px;
+  color: #9b9b9b;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+}
+main .gallery-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px;
+  place-content: center;
+  gap: 10px;
+}
+main .gallery-container .item img {
+  border-radius: 5px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .gallery-container .item img:hover {
+  transform: scale(1.05);
+}
+main .gallery-container .photo-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+main .gallery-container .photo-1 img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery-container .photo-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+main .gallery-container .photo-2 img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery-container .photo-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+main .gallery-container .photo-3 img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery-container .photo-4 {
+  grid-row: 2/4;
+  grid-column: 3/span 1;
+}
+main .gallery-container .photo-4 img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery-container .photo-5 img {
+  width: 100%;
+  height: 100%;
+}
+main .gallery-container .photo-6 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+main .gallery-container .photo-6 img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
